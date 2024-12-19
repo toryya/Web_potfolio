@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио</title>
+  <meta name="description" content="Это портфолио">
+  <meta name="keywords" content="Портфолио">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="header">
+  <div class="header__container">
+    <div class="header__logo">
+      <img src="../images/logo.png" alt="Логотип" class="header__logo-image">
+    </div>
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item"><a href="main.html" class="header__nav-link">Главная</a></li>
+        <li class="header__nav-item"><a href="skills.html" class="header__nav-link">Навыки</a></li>
+        <li class="header__nav-item"><a href="portfolio.html" class="header__nav-link">Портфолио</a></li>
+        <li class="header__nav-item"><a href="contact.html" class="header__nav-link">Контакты</a></li>
+        <li class="header__nav-item"><a href="table.html" class="header__nav-link">Таблица</a></li>
+        <li class="header__nav-item"><a href="constructor.html" class="header__nav-link">Конструктор</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="main">
+  <section id="portfolio" class="section">
+    <h2 class="section__title">Портфолио</h2>
+    <div class="portfolio__gallery">
+      <div class="portfolio__item" data-post-id="1">
+        <img src="../images/project1.jpg" alt="Проект 1" class="portfolio__image">
+        <p class="portfolio__caption">KolomnaGo</p>
+        <p class="portfolio__description">Помогает туристам и местным жителям быть в курсе всех культурных событий, а организаторам — легко управлять мероприятиями.</p>
+        <div class="loading-indicator"></div>
+        <div class="comments"></div>
+      </div>
+      <div class="portfolio__item" data-post-id="2">
+        <img src="../images/project2.jpg" alt="DishDash" class="portfolio__image">
+        <p class="portfolio__caption">DishDash</p>
+        <p class="portfolio__description">Выбирайте интересные места для встреч с друзьями с помощью Telegram-бота DishDash. Свайпайте и открывайте новые локации с друзьями или самостоятельно.</p>
+        <div class="loading-indicator"></div>
+        <div class="comments"></div>
+      </div>
+      <div class="portfolio__item" data-post-id="3">
+        <img src="../images/project3.jpg" alt="Проект 3" class="portfolio__image">
+        <p class="portfolio__caption">Shamps.dev</p>
+        <p class="portfolio__description">Проект включает в себя разработку дизайна веб-сайта для портфолио команды shamps.dev.</p>
+        <div class="loading-indicator"></div>
+        <div class="comments"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacts" class="section">
+    <h2 class="section__title">Контакты</h2>
+    <p class="section__text">Email: <a href="mailto:vikigom@yandex.ru" class="section__link">vikigom@yandex.ru</a></p>
+    <p class="section__text">Телефон: +7 (123) 456-78-90</p>
+  </section>
+</main>
+
+<footer class="footer">
+  <p class="footer__text">Ссылки на социальные сети:</p>
+  <ul class="footer__list">
+    <li class="footer__list-item"><a href="https://t.me/vktorriaa" class="footer__list-link">Telegram</a></li>
+    <li class="footer__list-item"><a href="https://github.com/toryya" class="footer__list-link">GitHub</a></li>
+    <li class="footer__list-item"><a href="https://www.behance.net/kuleshovaa" class="footer__list-link">Behance</a></li>
+  </ul>
+  <p class="footer__text">&copy; 2024, Кулешова Виктория. Все права защищены.</p>
+  <div id="load-stats" class="footer__text"></div>
+</footer>
+
+<script src="comments.js"></script>
+</body>
+</html>
